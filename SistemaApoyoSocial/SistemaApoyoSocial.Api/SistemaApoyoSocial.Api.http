@@ -1,0 +1,6 @@
+@SistemaApoyoSocial.Api_HostAddress = http://localhost:5138
+
+GET {{SistemaApoyoSocial.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
