@@ -1,4 +1,11 @@
+"use client";
+
+import { usePathname } from "next/navigation";
+
 export function SiteFooter() {
+  const pathname = usePathname();
+  if (pathname.startsWith("/admin")) return null;
+
   return (
     <footer className="border-t border-line/60">
       <div className="mx-auto max-w-6xl px-6 py-10 text-center text-[13px] text-muted">
