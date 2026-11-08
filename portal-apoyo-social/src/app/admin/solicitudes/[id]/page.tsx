@@ -100,7 +100,7 @@ export default function DetalleSolicitudPage() {
       </div>
 
       {error && (
-        <p className="mt-6 rounded-2xl bg-accent/10 px-5 py-3 text-[14px] text-accent">{error}</p>
+        <p className="mt-6 rounded-2xl bg-danger/10 px-5 py-3 text-[14px] text-danger">{error}</p>
       )}
       {mensaje && (
         <p className="mt-6 rounded-2xl bg-emerald-100 px-5 py-3 text-[14px] text-emerald-800">

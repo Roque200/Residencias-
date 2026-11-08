@@ -24,11 +24,11 @@ export const TRANSICIONES: Record<string, string[]> = {
 };
 
 export const ESTILO_ESTATUS: Record<string, string> = {
-  recibida: "bg-ink/8 text-ink/70",
-  en_revision: "bg-accent-soft/25 text-ink",
-  aprobada: "bg-emerald-100 text-emerald-800",
-  rechazada: "bg-accent/12 text-accent",
-  entregada: "bg-sky-100 text-sky-800",
+  recibida: "bg-slate-100 text-slate-700",
+  en_revision: "bg-amber-50 text-amber-800",
+  aprobada: "bg-emerald-50 text-emerald-800",
+  rechazada: "bg-red-50 text-red-700",
+  entregada: "bg-blue-50 text-blue-800",
 };
 
 export function formatearFecha(valor: string): string {

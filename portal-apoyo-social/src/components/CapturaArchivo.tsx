@@ -100,8 +100,8 @@ export function CapturaArchivo({
           <p className="text-[13px] text-muted">
             {value ? `Listo: ${value.name}` : "Sin archivo seleccionado"}
           </p>
-          {errorCamara && <p className="text-[13px] text-accent">{errorCamara}</p>}
-          {error && <p className="text-[13px] text-accent">{error}</p>}
+          {errorCamara && <p className="text-[13px] text-danger">{errorCamara}</p>}
+          {error && <p className="text-[13px] text-danger">{error}</p>}
         </>
       )}
 

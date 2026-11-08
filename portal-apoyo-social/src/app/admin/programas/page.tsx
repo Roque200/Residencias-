@@ -24,7 +24,7 @@ const VACIO: ProgramaInput = {
 const ESTILO_PROGRAMA: Record<string, string> = {
   activo: "bg-emerald-100 text-emerald-800",
   cerrado: "bg-ink/8 text-ink/70",
-  proximamente: "bg-accent-soft/25 text-ink",
+  proximamente: "bg-amber-50 text-amber-800",
 };
 
 const ETIQUETA_PROGRAMA: Record<string, string> = {
@@ -144,7 +144,7 @@ export default function ProgramasAdminPage() {
       </div>
 
       {error && (
-        <p className="mt-6 rounded-2xl bg-accent/10 px-5 py-3 text-[14px] text-accent">{error}</p>
+        <p className="mt-6 rounded-2xl bg-danger/10 px-5 py-3 text-[14px] text-danger">{error}</p>
       )}
 
       <div className="mt-6 overflow-x-auto rounded-[24px] bg-surface shadow-[0_1px_2px_rgba(0,0,0,0.04),0_8px_24px_rgba(0,0,0,0.04)]">
@@ -290,7 +290,7 @@ export default function ProgramasAdminPage() {
             </div>
 
             {errorForm && (
-              <p className="mt-4 rounded-xl bg-accent/10 px-4 py-2.5 text-[13px] text-accent">
+              <p className="mt-4 rounded-xl bg-danger/10 px-4 py-2.5 text-[13px] text-danger">
                 {errorForm}
               </p>
             )}

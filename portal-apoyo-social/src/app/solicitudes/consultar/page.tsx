@@ -62,7 +62,7 @@ export default function ConsultarSolicitudPage() {
       </form>
 
       {error && (
-        <p className="mt-6 rounded-2xl bg-accent-soft/15 px-5 py-3 text-[14px] text-ink/80">
+        <p className="mt-6 rounded-2xl bg-black/[0.04] px-5 py-3 text-[14px] text-ink/80">
           {error}
         </p>
       )}

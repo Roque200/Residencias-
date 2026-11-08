@@ -14,25 +14,12 @@ export default async function Home() {
 
   return (
     <div>
-      <section className="relative overflow-hidden px-6 pt-24 pb-20 text-center">
-        <div
-          aria-hidden
-          className="pointer-events-none absolute left-1/2 top-[-140px] h-[460px] w-[680px] -translate-x-1/2 rounded-full bg-accent/45 blur-[100px]"
-        />
-        <div
-          aria-hidden
-          className="pointer-events-none absolute right-[-100px] top-[20px] h-[340px] w-[340px] rounded-full bg-accent-soft/60 blur-[90px]"
-        />
-        <div
-          aria-hidden
-          className="pointer-events-none absolute left-[-80px] bottom-[-60px] h-[260px] w-[260px] rounded-full bg-accent/30 blur-[90px]"
-        />
-
-        <div className="relative mx-auto max-w-2xl">
-          <span className="inline-flex items-center rounded-full bg-accent px-4 py-1.5 text-[13px] font-semibold text-white">
+      <section className="border-b border-line bg-surface px-6 pt-20 pb-16 text-center">
+        <div className="mx-auto max-w-2xl">
+          <span className="inline-flex items-center rounded-full bg-accent/10 px-4 py-1.5 text-[13px] font-semibold text-accent">
             Presidencia Municipal de Apaseo el Grande
           </span>
-          <h1 className="mt-6 text-4xl font-bold tracking-tight text-ink sm:text-6xl">
+          <h1 className="mt-6 text-4xl font-bold tracking-tight text-ink sm:text-5xl">
             Apoyos para tu hogar y tu comunidad
           </h1>
           <p className="mx-auto mt-5 max-w-lg text-lg text-muted">
@@ -42,9 +29,9 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 pb-24">
+      <section className="mx-auto max-w-6xl px-6 py-14">
         {error && (
-          <p className="mx-auto max-w-lg rounded-2xl bg-accent-soft/20 px-6 py-4 text-center text-[15px] text-ink/80">
+          <p className="mx-auto max-w-lg rounded-2xl bg-danger/10 px-6 py-4 text-center text-[15px] text-danger">
             {error}
           </p>
         )}

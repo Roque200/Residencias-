@@ -63,7 +63,7 @@ export default function VistaGeneralPage() {
       </div>
 
       {error && (
-        <p className="mt-6 rounded-2xl bg-accent/10 px-5 py-3 text-[14px] text-accent">
+        <p className="mt-6 rounded-2xl bg-danger/10 px-5 py-3 text-[14px] text-danger">
           {error}
         </p>
       )}

@@ -197,7 +197,7 @@ function SolicitudesContenido() {
       </form>
 
       {error && (
-        <p className="mt-6 rounded-2xl bg-accent/10 px-5 py-3 text-[14px] text-accent">{error}</p>
+        <p className="mt-6 rounded-2xl bg-danger/10 px-5 py-3 text-[14px] text-danger">{error}</p>
       )}
 
       <div className="mt-6 overflow-x-auto rounded-[24px] bg-surface shadow-[0_1px_2px_rgba(0,0,0,0.04),0_8px_24px_rgba(0,0,0,0.04)]">
