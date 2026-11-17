@@ -154,10 +154,10 @@ export default function FormularioPostulacionPage() {
           value={comprobante}
           onChange={setComprobante}
         />
-        {errorArchivos && <p className="text-[14px] text-accent">{errorArchivos}</p>}
+        {errorArchivos && <p className="text-[14px] text-danger">{errorArchivos}</p>}
 
         {errorEnvio && (
-          <p className="rounded-2xl bg-accent-soft/15 px-5 py-3 text-[14px] text-ink/80">
+          <p className="rounded-2xl bg-black/[0.04] px-5 py-3 text-[14px] text-ink/80">
             {errorEnvio}
           </p>
         )}
@@ -207,7 +207,7 @@ function Campo({
           error ? "border-accent" : "border-line"
         }`}
       />
-      {error && <span className="text-[13px] font-normal text-accent">{error}</span>}
+      {error && <span className="text-[13px] font-normal text-danger">{error}</span>}
     </label>
   );
 }

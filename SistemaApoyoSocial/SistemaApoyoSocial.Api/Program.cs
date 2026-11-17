@@ -41,15 +41,15 @@ builder.Services
 
 builder.Services.AddAuthorization();
 
+var origenesPermitidos = (builder.Configuration["Cors:Origins"] ?? "http://localhost:3000")
+    .Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("FrontendPolicy", policy =>
     {
         policy
-            .WithOrigins(
-                "http://localhost:3000",
-                "https://TU-DOMINIO-EN-VERCEL.vercel.app"
-            )
+            .WithOrigins(origenesPermitidos)
             .AllowAnyHeader()
             .AllowAnyMethod();
     });
@@ -63,7 +63,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+if (app.Environment.IsDevelopment())
+{
+    app.UseHttpsRedirection();
+}
+
 app.UseCors("FrontendPolicy");
 app.UseAuthentication();
 app.UseAuthorization();
